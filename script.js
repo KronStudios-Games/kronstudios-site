@@ -40,7 +40,7 @@ function animateTrail() {
   ctx.lineJoin = 'round';
   for (let i = 0; i < trail.length - 1; i++) {
     const p1 = trail[i], p2 = trail[i + 1];
-    ctx.strokeStyle = `rgba(48,168,255,${Math.max(0, p1.alpha - 0.15)})`;
+    ctx.strokeStyle = `rgba(102,117,255,${Math.max(0, p1.alpha - 0.18)})`;
     ctx.beginPath();
     ctx.moveTo(p1.x, p1.y);
     ctx.lineTo(p2.x, p2.y);
