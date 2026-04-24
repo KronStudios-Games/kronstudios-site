@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KronStudios — Independent Game Studio</title>
+  <meta name="description" content="KronStudios is an independent, community-driven game studio building narrative-first, systems-grounded worlds.">
+  <link rel="icon" href="assets/k-logo.jpg" type="image/jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Orbitron:wght@700&family=VT323&family=Jersey+10&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="trailCanvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="topbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-content">
+      <a href="#hero" class="brand">
+        <img src="assets/k-logo.jpg" alt="" class="nav-logo" aria-hidden="true">
+        <span>KRONSTUDIOS</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="https://github.com/KronStudios-Games" target="_blank" rel="noopener" class="gh-btn">GitHub ↗</a>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">INDEPENDENT GAME STUDIO</p>
+      <div class="hero-logo-wrap">
+        <img src="assets/ks-banner.png" alt="KronStudios" class="hero-logo">
+      </div>
+      <p class="hero-role"><span id="roleType"></span><span class="cursor" aria-hidden="true">|</span></p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">Our Projects</a>
+        <a href="#contact"  class="btn-ghost">Get in Touch</a>
+      </div>
+      <p class="hero-tagline">"We are building the machine before building the product. Discipline first. Features second."</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-alt">
+    <div class="inner two-col">
+      <div class="about-logo">
+        <img src="assets/ktg-pfp.png" alt="KronStudios Games" class="studio-img">
+      </div>
+      <div class="about-body">
+        <h2>About the Studio</h2>
+        <p class="section-sub">Who we are and what we build.</p>
+        <p class="muted about-p">
+          KronStudios is an independent, community-driven studio building narrative-first, systems-grounded worlds. We don't separate the story from the system — everything we make is built on the argument that these disciplines belong together.<br><br>
+          Worldbuilding that holds up under scrutiny. Mechanics that feel like they belong in the universe that contains them. Code that serves something larger than itself, while still having a self.<br><br>
+          Structure comes before features. That's the machine we're building.
+        </p>
+        <div class="tag-row" style="margin-top:1.5rem">
+          <span class="tag">Game Development</span>
+          <span class="tag">Narrative Design</span>
+          <span class="tag">Unreal Engine</span>
+          <span class="tag">Open to collaborators</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-base">
+    <div class="inner">
+      <h2>Projects</h2>
+      <p class="section-sub">Active builds and ongoing initiatives under Kronstudios Games.</p>
+      <div class="projects-grid">
+
+        <div class="project-card project-card-featured">
+          <div class="project-top">
+            <h3>Above The Line</h3>
+            <span class="status-badge">Active — WIP</span>
+          </div>
+          <p class="project-tagline">Post-apocalyptic narrative survival RPG. Vancouver, 2039. Yellowstone erupts. Society divides by elevation. The player climbs toward autonomy.</p>
+          <p class="project-desc">After the MSE-38 seismic event series and the Labor Day eruption, an ash cloud reshapes the atmosphere above Vancouver — a toxic band at fixed elevation that splits the world between those who fled upward beyond the Cloud, and those who survived below. Above The Line is the story of choosing to leave the fragile safety of a high-rise settlement and travel upward.</p>
+          <div class="pill-row sm">
+            <span class="pill">Unreal Engine</span>
+            <span class="pill">C++ / Blueprint</span>
+            <span class="pill">Git LFS</span>
+            <span class="pill">Quartz GDD</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/KronStudios-Games/abovetheline" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card-ghost">
+          <div class="project-top">
+            <h3>???</h3>
+            <span class="status-badge status-badge-soon">Concept</span>
+          </div>
+          <p class="project-tagline">The next project is in early concept. Details to follow when the time is right.</p>
+          <div class="pill-row sm">
+            <span class="pill pill-dim">TBA</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE BREAK -->
+  <div class="vision-break">
+    <p>"Everything we make is an argument that these things belong together."</p>
+    <p class="vision-attr">— KronStudios</p>
+  </div>
+
+  <!-- TEAM -->
+  <section id="team" class="section-alt">
+    <div class="inner">
+      <h2>Team</h2>
+      <p class="section-sub">The people behind the machine.</p>
+      <div class="team-grid">
+
+        <div class="team-card">
+          <img src="assets/ktd-pfp.png" alt="Andrew Pie" class="team-photo">
+          <div class="team-info">
+            <h3>Andrew Pie</h3>
+            <p class="team-handle">KronTheDev</p>
+            <p class="team-role-label">Project Director · Worldbuilding &amp; Narrative Lead</p>
+            <div class="team-links">
+              <a href="https://github.com/KronTheDev" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://kronthedev.xyz" target="_blank" rel="noopener">Portfolio ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="team-note">KronStudios is community-driven. We are open to collaborators. <a href="#contact" class="team-contact-link">Get in touch.</a></p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-base">
+    <div class="inner" style="text-align:center">
+      <h2>Contact</h2>
+      <p class="section-sub">Open to collaborators, contributors, and questions.</p>
+      <div class="contact-links">
+        <a href="mailto:kronthedev@gmail.com" class="contact-chip">✉ kronthedev@gmail.com</a>
+        <a href="https://github.com/KronStudios-Games" class="contact-chip" target="_blank" rel="noopener">⌥ KronStudios-Games</a>
+        <span class="contact-chip contact-chip-static">◈ Discord: @kronbrosgames</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 KronStudios (Kronstudios Games). All rights reserved.</p>
+  </footer>
+
+  <!-- Trail widget -->
+  <div id="trailWidget" class="trail-widget" tabindex="0" aria-label="Trail controls">
+    <button class="trail-tab" aria-expanded="false" aria-controls="trailPanel" title="Toggle cursor trail">🟣</button>
+    <div id="trailPanel" class="trail-panel" role="region" aria-hidden="true">
+      <label class="switch">
+        <input id="trailToggle" type="checkbox" checked aria-checked="true">
+        <span class="slider"></span>
+      </label>
+      <span class="trail-text">Trail</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
